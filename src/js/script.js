@@ -40,11 +40,11 @@ function teclaPressionada(event) {
     if (event.key === "ArrowRight") {
         direcao = 1;
         sentido = 1;
-        personagem.style.backgroundImage = "url(../images/marioAndandoLadoDireito.gif)";
+        personagem.style.backgroundImage = "url(./images/marioAndandoLadoDireito.gif)";
     } else if (event.key === "d") {
         sentido = 1;
         direcao = 1;
-        personagem.style.backgroundImage = "url(../images/marioAndandoLadoDireito.gif)";
+        personagem.style.backgroundImage = "url(./images/marioAndandoLadoDireito.gif)";
     } else if (event.key === "ArrowLeft") {
         sentido = -1;
         direcao = -1;
