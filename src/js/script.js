@@ -40,11 +40,11 @@ function teclaPressionada(event) {
     if (event.key === "ArrowRight") {
         direcao = 1;
         sentido = 1;
-        personagem.style.backgroundImage = "url(/src/images/marioAndandoLadoDireito.gif)";
+        personagem.style.backgroundImage = "url(../images/marioAndandoLadoDireito.gif)";
     } else if (event.key === "d") {
         sentido = 1;
         direcao = 1;
-        personagem.style.backgroundImage = "url(/src/images/marioAndandoLadoDireito.gif)";
+        personagem.style.backgroundImage = "url(../images/marioAndandoLadoDireito.gif)";
     } else if (event.key === "ArrowLeft") {
         sentido = -1;
         direcao = -1;
@@ -128,19 +128,19 @@ function checarMoedas() {
     }
 }
 
-function checarPontos(){
-   if(pontosAtual === 500) {
-    tempoAtual += 60;
-    tempo.textContent = tempoAtual
-   } else if(pontosAtual === 1000){
-    pontosAtual = 0;
-    pontos.textContent = pontosAtual;
-    tempoAtual += 60;
-    tempo.textContent = tempoAtual;
-    estrelasAtual++;
-    localStorage.setItem("estrelasAtual",estrelasAtual);
-    estrelas.textContent = estrelasAtual;   
-   }
+function checarPontos() {
+    if (pontosAtual === 500) {
+        tempoAtual += 60;
+        tempo.textContent = tempoAtual
+    } else if (pontosAtual === 1000) {
+        pontosAtual = 0;
+        pontos.textContent = pontosAtual;
+        tempoAtual += 60;
+        tempo.textContent = tempoAtual;
+        estrelasAtual++;
+        localStorage.setItem("estrelasAtual", estrelasAtual);
+        estrelas.textContent = estrelasAtual;
+    }
 }
 
 function timer() {
@@ -182,7 +182,7 @@ function colisaoComInimigo() {
 function gameOver() {
     removerTeclas();
     clearInterval(checarRelogio);
-    personagem.style.backgroundImage = "url(/src/images/marioMorto.gif)";
+    personagem.style.backgroundImage = "url(../images/marioMorto.gif)";
     inimigo.style.display = "none";
     direcao = 0;
 }
